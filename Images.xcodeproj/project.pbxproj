@@ -14,6 +14,13 @@
 		218F37422820A1FA00FCA27B /* ImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F37412820A1FA00FCA27B /* ImagesTests.swift */; };
 		218F374C2820A1FA00FCA27B /* ImagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F374B2820A1FA00FCA27B /* ImagesUITests.swift */; };
 		218F374E2820A1FA00FCA27B /* ImagesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F374D2820A1FA00FCA27B /* ImagesUITestsLaunchTests.swift */; };
+		218F375D2820AE6400FCA27B /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F375C2820AE6400FCA27B /* ImageRow.swift */; };
+		218F375F2820B13700FCA27B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F375E2820B13700FCA27B /* Models.swift */; };
+		218F37612820B42B00FCA27B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F37602820B42B00FCA27B /* Extensions.swift */; };
+		218F37632820CA4D00FCA27B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F37622820CA4D00FCA27B /* SwiftUIView.swift */; };
+		218F37652820CC6500FCA27B /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F37642820CC6400FCA27B /* ZoomableScrollView.swift */; };
+		218F37672821443A00FCA27B /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F37662821443A00FCA27B /* DrawingView.swift */; };
+		218F37692821E86900FCA27B /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F37682821E86900FCA27B /* TextBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,14 @@
 		218F37472820A1FA00FCA27B /* ImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		218F374B2820A1FA00FCA27B /* ImagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesUITests.swift; sourceTree = "<group>"; };
 		218F374D2820A1FA00FCA27B /* ImagesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		218F375C2820AE6400FCA27B /* ImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
+		218F375E2820B13700FCA27B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		218F37602820B42B00FCA27B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		218F37622820CA4D00FCA27B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		218F37642820CC6400FCA27B /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
+		218F37662821443A00FCA27B /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		218F37682821E86900FCA27B /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
+		21D8823228224C980075ADF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +109,16 @@
 		218F372F2820A1F900FCA27B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				21D8823228224C980075ADF6 /* Info.plist */,
+				218F37662821443A00FCA27B /* DrawingView.swift */,
+				218F37682821E86900FCA27B /* TextBox.swift */,
 				218F37302820A1F900FCA27B /* ImagesApp.swift */,
 				218F37322820A1F900FCA27B /* ContentView.swift */,
+				218F37622820CA4D00FCA27B /* SwiftUIView.swift */,
+				218F37642820CC6400FCA27B /* ZoomableScrollView.swift */,
+				218F37602820B42B00FCA27B /* Extensions.swift */,
+				218F375E2820B13700FCA27B /* Models.swift */,
+				218F375C2820AE6400FCA27B /* ImageRow.swift */,
 				218F37342820A1FA00FCA27B /* Assets.xcassets */,
 				218F37362820A1FA00FCA27B /* Preview Content */,
 			);
@@ -257,8 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218F37652820CC6500FCA27B /* ZoomableScrollView.swift in Sources */,
+				218F37692821E86900FCA27B /* TextBox.swift in Sources */,
+				218F37612820B42B00FCA27B /* Extensions.swift in Sources */,
+				218F37672821443A00FCA27B /* DrawingView.swift in Sources */,
 				218F37332820A1F900FCA27B /* ContentView.swift in Sources */,
+				218F37632820CA4D00FCA27B /* SwiftUIView.swift in Sources */,
 				218F37312820A1F900FCA27B /* ImagesApp.swift in Sources */,
+				218F375D2820AE6400FCA27B /* ImageRow.swift in Sources */,
+				218F375F2820B13700FCA27B /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +450,8 @@
 				DEVELOPMENT_TEAM = 7PWK7SKWKH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Images/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +481,8 @@
 				DEVELOPMENT_TEAM = 7PWK7SKWKH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Images/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ImagesApp: App {
+    let viewModel = AppViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: viewModel)
+//                .environmentObject(viewModel)
         }
     }
 }
