@@ -99,12 +99,20 @@ struct DrawingView: View {
         
         UIGraphicsBeginImageContextWithOptions(viewModel.rect.size, false, 0)
         
-        
-        
-        let SwiftUIView = ZStack {
+        let SwiftUIImageView = ZStack {
             image
                 .resizable()
                 .scaledToFit()
+        }
+        
+        let imgController = UIHostingController(rootView: SwiftUIImageView).view!
+        imgController.frame = viewModel.rect
+        imgController.backgroundColor = .clear
+        imgController.drawHierarchy(in: CGRect(origin: .zero, size: viewModel.rect.size), afterScreenUpdates: true)
+        
+        canvasView.drawHierarchy(in: CGRect(origin: .zero, size: viewModel.rect.size), afterScreenUpdates: true)
+        
+        let SwiftUIView = ZStack {
             
             ForEach(viewModel.textBoxes) { box in
                 
@@ -122,8 +130,6 @@ struct DrawingView: View {
         canvasView.backgroundColor = .clear
         
         controller.drawHierarchy(in: CGRect(origin: .zero, size: viewModel.rect.size), afterScreenUpdates: true)
-        
-        canvasView.drawHierarchy(in: CGRect(origin: .zero, size: viewModel.rect.size), afterScreenUpdates: true)
         
         let generatedImage = UIGraphicsGetImageFromCurrentImageContext()
         
